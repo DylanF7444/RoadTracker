@@ -219,6 +219,17 @@ label {
   width: 100%;
 }
 
+.map-fallback {
+  align-items: center;
+  background: #e9eef0;
+  color: #52616b;
+  display: flex;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 58vh;
+  width: 100%;
+}
+
 .bottom-drawer {
   background: #f4f0e8;
   border-top: 1px solid #ded7ca;
