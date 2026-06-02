@@ -1,0 +1,19 @@
+{
+  "name": "roadlog",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Privacy-first road tracking MVP for mobile tracking and web viewing.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace @roadlog/web run dev",
+    "build:web": "npm --workspace @roadlog/web run build",
+    "test": "npm --workspace @roadlog/core test",
+    "typecheck": "npm --workspaces --if-present run typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

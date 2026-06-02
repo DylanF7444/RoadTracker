@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "RoadLog",
+    "slug": "roadlog",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "roadlog",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "RoadLog uses your location while tracking to mark roads you have traveled.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "RoadLog can keep tracking during a session while the app is in the background.",
+        "UIBackgroundModes": ["location"]
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "RoadLog uses background location only while you choose to track a road session."
+        }
+      ]
+    ]
+  }
+}
